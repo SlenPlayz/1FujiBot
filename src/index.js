@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity({name:'procrastination', type:'PLAYING'}); 
+  client.user.setActivity({name:'procrastination', type:'PLAYING'});
 })
 client.on('message', msg => {
   switch(msg.content){
@@ -28,6 +28,7 @@ client.on('message', msg => {
         break;
     }
     if(msg.content.substring(0,4) === '!say'){
+      msg.delete()
       msg.channel.send(msg.content.substring(5))
     }
 });
