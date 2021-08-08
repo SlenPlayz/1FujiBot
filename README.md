@@ -1,5 +1,5 @@
 ## A discord bot for the 1 Fuji server
-## Comands
+## Commands
 !exam - gives links to exam schdule and what is tested.
 
 
