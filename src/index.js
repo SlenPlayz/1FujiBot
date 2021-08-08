@@ -22,4 +22,4 @@ client.on('message', msg => {
     
 });
 
-client.login('ODczMzc4ODcyMzM3NTMwOTEw.YQ3jdQ.IN-NJTDttlfyNfSHDA56jDZ8HIA');
+client.login(process.env.DISCORD_TOKEN);
