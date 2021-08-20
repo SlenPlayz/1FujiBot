@@ -6,6 +6,9 @@ client.on('ready', () => {
   client.user.setActivity({name:'procrastination', type:'PLAYING'});
 })
 client.on('message', msg => {
+  // if (msg.member.roles.cache.find(role => role.name == "Mod")) {
+  //   console.log('yes')
+  // }
   switch(msg.content){
     case '!exam':
       msg.reply('Schedule: \n https://drive.google.com/file/d/11ainApP0rLnYa-EHamhPvEC_15zOU97k/view \n Topics Tested \n Express: https://drive.google.com/file/d/1sBrsWBuTmtND7vJz_Ewiqdjf0EptR9NJ/view \n NA: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view \n NT: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view');
@@ -16,6 +19,9 @@ client.on('message', msg => {
       case '!help':
         msg.reply(`List of avalible commands:\n!exam - gives links to exam schdule and what is tested. \n \n!timetable - Sends the timetable to the chat.\n \n!suggest - Sends a link to a google form to suggest features.\n \n
         `)
+        break;
+      case '!random':
+        msg.channel.send()
         break;
       case '!timetable':
       msg.reply('Here it is', {
@@ -28,12 +34,17 @@ client.on('message', msg => {
       //   break;
     }
     if(msg.content.substring(0,4) === '!say'){
-      if(msg.content.substring(5) != '') {
+      if (msg.member.roles.cache.find(role => role.name == "Mod")) {
+        if(msg.content.substring(5) != '') {
         msg.delete()
         msg.channel.send(msg.content.substring(5));
+        }
+        else{
+          msg.reply('Enter a message for me to repeat')
+        }
       }
       else{
-        msg.reply('Enter a message for me to repeat')
+        msg.reply('You dont have permission to use that command')
       }
     }
 });
