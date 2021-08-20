@@ -20,9 +20,6 @@ client.on('message', msg => {
         msg.reply(`List of avalible commands:\n!exam - gives links to exam schdule and what is tested. \n \n!timetable - Sends the timetable to the chat.\n \n!suggest - Sends a link to a google form to suggest features.\n \n
         `)
         break;
-      case '!random':
-        msg.channel.send()
-        break;
       case '!timetable':
       msg.reply('Here it is', {
         files: [
