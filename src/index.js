@@ -31,7 +31,7 @@ client.on('message', msg => {
       //   break;
     }
     if(msg.content.substring(0,4) === '!say'){
-      if (msg.member.roles.cache.find(role => role.name == "Mod")) {
+      if (msg.member.roles.cache.find(role => role.name == "Mods")) {
         if(msg.content.substring(5) != '') {
         msg.delete()
         msg.channel.send(msg.content.substring(5));
