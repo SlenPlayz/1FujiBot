@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity({name:'speedrunning homework', type:'PLAYING'});
+  client.user.setActivity({name:'games instead of hw', type:'PLAYING'});
 })
 client.on('message', msg => {
   // if (msg.member.roles.cache.find(role => role.name == "Mod")) {
