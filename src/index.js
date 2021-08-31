@@ -13,7 +13,7 @@ client.on('message', msg => {
     case '!exam':
       // msg.reply('Schedule: \n https://drive.google.com/file/d/11ainApP0rLnYa-EHamhPvEC_15zOU97k/view \n Topics Tested \n Express: https://drive.google.com/file/d/1sBrsWBuTmtND7vJz_Ewiqdjf0EptR9NJ/view \n NA: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view \n NT: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view');
       // break;
-      msg.reply('No upcoming exams!!! Enjoy the holidays!')
+      msg.reply('No upcoming exams!!! Enjoy the holidays! :D')
       case '!suggest':
         msg.reply('Suggest features here: https://forms.gle/o8UcJoD8zATkg9DE9')
         break;
