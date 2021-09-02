@@ -13,12 +13,12 @@ client.on('message', msg => {
     case '!exam':
       // msg.reply('Schedule: \n https://drive.google.com/file/d/11ainApP0rLnYa-EHamhPvEC_15zOU97k/view \n Topics Tested \n Express: https://drive.google.com/file/d/1sBrsWBuTmtND7vJz_Ewiqdjf0EptR9NJ/view \n NA: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view \n NT: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view');
       // break;
-      msg.reply('No upcoming exams!!! Enjoy the holidays! :D')
+      msg.channel.send('https://i.ibb.co/M63knc3/173-C3005-1614-4-F11-810-B-8-BDCB52549-C2.jpg')
       break;
       case '!exams':
       // msg.reply('Schedule: \n https://drive.google.com/file/d/11ainApP0rLnYa-EHamhPvEC_15zOU97k/view \n Topics Tested \n Express: https://drive.google.com/file/d/1sBrsWBuTmtND7vJz_Ewiqdjf0EptR9NJ/view \n NA: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view \n NT: https://drive.google.com/file/d/1phGObmzyzvKuvWNz8btK3BUE6kGAgWWS/view');
       // break;
-      msg.reply('No upcoming exams!!! Enjoy the holidays! :D')
+      msg.channel.send('https://i.ibb.co/M63knc3/173-C3005-1614-4-F11-810-B-8-BDCB52549-C2.jpg')
       break;
       case '!suggest':
         msg.reply('Suggest features here: https://forms.gle/o8UcJoD8zATkg9DE9')
