@@ -1,9 +1,23 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const cron = require('node-cron');
 
+const statuses = [{name:'games instead of hw', type:'PLAYING'}, {name:'Procrastination', type:'PLAYING'}, {name:'Speedrunning hw', type:'PLAYING'}]
+cron.schedule('* * * * *', function() {
+  client.user.setActivity({name:'Loading..', type:'PLAYING'});
+  updateStatusWithRandom()
+});
+const updateStatusWithRandom = () => {
+  client.user.setActivity(statuses[Math.floor(Math.random() * (statuses.length + 1))]);
+  //console.log(Math.floor(Math.random() * (statuses.length + 1)))
+}
+//console.log(Math.floor(Math.random() * (statuses.length + 1)))
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity({name:'games instead of hw', type:'PLAYING'});
+  //console.log(Math.floor(Math.random() * statuses.length + 1))
+  //client.user.setActivity(statuses[Math.floor(Math.random() * (statuses.length + 1))]);
+  client.user.setActivity({name:'Loading..', type:'PLAYING'});
+  updateStatusWithRandom()
 })
 client.on('message', msg => {
   // if (msg.member.roles.cache.find(role => role.name == "Mod")) {
@@ -35,7 +49,7 @@ client.on('message', msg => {
       //   break;
     }
     if(msg.content.substring(0,4) === '!say'){
-      if (msg.member.roles.cache.find(role => role.name == "SayCmdUsage")) {
+      if (msg.member.roles.cache.find(role => role.name == "1FujiBotManager")) {
         if(msg.content.substring(5) != '') {
         msg.delete()
         msg.channel.send(msg.content.substring(5));
