@@ -44,6 +44,8 @@ client.on('message', msg => {
       case '!timetable':
       msg.channel.send('https://i.ibb.co/Zh8MY26/ED679-DCE-3-EEE-42-CE-8-D22-653-C5-D61-F268.jpg')
         break;
+    case '!ping':
+      msg.channel.send(`Pong! Bot latency: ${Date.now() - msg.createdTimestamp}ms. Discord API Latency: ${Math.round(client.ws.ping)}ms`);
       // default:
       //   console.log(`Message by (id:${msg.author.id} Username: ${msg.author.username}#${msg.author.discriminator}): ${msg.content}`)
       //   break;
