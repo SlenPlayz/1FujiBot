@@ -46,6 +46,9 @@ client.on('message', msg => {
         break;
     case '!ping':
       msg.channel.send(`Pong! Bot latency: ${Date.now() - msg.createdTimestamp}ms. Discord API Latency: ${Math.round(client.ws.ping)}ms`);
+      break;
+    case '!hw':
+      msg.channel.send('https://slenplayz.github.io/sl/sch/septholidayhw.pdf')
       // default:
       //   console.log(`Message by (id:${msg.author.id} Username: ${msg.author.username}#${msg.author.discriminator}): ${msg.content}`)
       //   break;
