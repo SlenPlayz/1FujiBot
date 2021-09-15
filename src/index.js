@@ -16,8 +16,8 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
   //console.log(Math.floor(Math.random() * statuses.length + 1))
   //client.user.setActivity(statuses[Math.floor(Math.random() * (statuses.length + 1))]);
-  client.user.setActivity({name:'Loading..', type:'PLAYING'});
-  updateStatusWithRandom()
+  client.user.setActivity({name:'RIP Rhythm :(', type:'PLAYING'});
+  //updateStatusWithRandom()
 })
 client.on('message', msg => {
   // if (msg.member.roles.cache.find(role => role.name == "Mod")) {
