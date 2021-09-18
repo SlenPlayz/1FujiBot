@@ -74,7 +74,7 @@ client.on('message', msg => {
 const exams = (msg) => {
   //msg.channel.send('Schedule: https://i.ibb.co/M63knc3/173-C3005-1614-4-F11-810-B-8-BDCB52549-C2.jpg \n Topics tested: https://drive.google.com/drive/mobile/folders/1-y1aD838CHI-f3bELj04k4u5V3liSL_t?usp=sharing')
   msg.channel.send('https://i.ibb.co/M63knc3/173-C3005-1614-4-F11-810-B-8-BDCB52549-C2.jpg')
-msg.channel.send('Topics tested: https://slenplayz.github.io/sl/1f2021fte')
+msg.channel.send('Topics tested: https://slenplayz.github.io/sl/sch/1f2021fte')
 }
 
 client.login(process.env.DISCORD_TOKEN);
