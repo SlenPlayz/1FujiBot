@@ -18,7 +18,6 @@ client.on('ready', () => {
   //client.user.setActivity(statuses[Math.floor(Math.random() * (statuses.length + 1))]);
   client.user.setActivity({name:'Loading...', type:'PLAYING'});
   updateStatusWithRandom()
-  //efjausehfvyrsdgnl
 })
 client.on('message', msg => {
   // if (msg.member.roles.cache.find(role => role.name == "Mod")) {
