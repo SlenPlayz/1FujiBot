@@ -51,7 +51,8 @@ client.on('message', msg => {
       msg.channel.send('https://slenplayz.github.io/sl/sch/septholidayhw.pdf')
       break;
     case '!periodic-table':
-      msg.channel.send(`https://media.discordapp.net/attachments/879257283337547827/889859296165265428/Periodic-Table-O-Level-2020-1332x666.jpg`)
+      msg.channel.send(`https://slenplayz.github.io/sl/sch/periodic-table.jpg`)
+      msg.channel.send('Please click on the photo and click open original')
       break;
     // default:
     //   console.log(`Message by (id:${msg.author.id} Username: ${msg.author.username}#${msg.author.discriminator}): ${msg.content}`)
