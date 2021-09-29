@@ -10,3 +10,9 @@
 
 
 !say - Says whatever you want the bot to say
+
+
+!ping - Sends a message with Bot and API latency
+
+
+!periodic-table - Sends a message with the periodic table.

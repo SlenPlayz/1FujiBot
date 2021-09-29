@@ -38,7 +38,7 @@ client.on('message', msg => {
       msg.reply('Suggest features here: https://forms.gle/o8UcJoD8zATkg9DE9')
       break;
     case '!help':
-      msg.reply(`List of avalible commands:\n!exam - gives links to exam schedule and what is tested.\n !timetable - Sends the timetable to the channel.\n !suggest - Sends a link to a google form to suggest features.\n!say - Makes the bot say whatever you want it to say. (only usable by mods)\n!hw - Sends and hw during the holidays.\n!ping - Sends a message to the channel showing the bot and discord latency.\n!help - This command\n\n
+      msg.reply(`List of avalible commands:\n!exam - gives links to exam schedule and what is tested.\n !timetable - Sends the timetable to the channel.\n !suggest - Sends a link to a google form to suggest features.\n!say - Makes the bot say whatever you want it to say. (only usable by mods)\n!hw - Sends and hw during the holidays.\n !periodic-table - Sends a message with the periodic table.\n!ping - Sends a message to the channel showing the bot and discord latency.\n!help - This command\n\n
 `)
       break;
     case '!timetable':
