@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-//const cron = require('node-cron');
+///const cron = require('node-cron');
 
 const statuses = [{ name: 'games instead of hw', type: 'PLAYING' }, { name: 'Procrastination', type: 'PLAYING' }, { name: 'Speedrunning hw', type: 'PLAYING' }]
 // cron.schedule('* * * * *', function() {
