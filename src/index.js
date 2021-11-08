@@ -16,7 +16,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   //console.log(Math.floor(Math.random() * statuses.length + 1))
   //client.user.setActivity(statuses[Math.floor(Math.random() * (statuses.length + 1))]);
-  client.user.setActivity({ name: 'FTE IS OVER!!!', type: 'PLAYING'});
+  client.user.setActivity({ name: 'games since FTE is over', type: 'PLAYING'});
   //updateStatusWithRandom()
 })
 client.on('message', msg => {
